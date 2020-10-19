@@ -6,5 +6,11 @@ public class Figure {
     Figure(int height){
         this.height = height;
     }
+    
+    void draw(){
+        for(int i = 0; i < height;i++){
+            System.out.println("");
+        }
+    }
 
 }
