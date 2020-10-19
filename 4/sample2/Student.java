@@ -14,11 +14,10 @@ public class Student extends Member {
     String getProfile(){
         StringBuffer sb = new StringBuffer();
         sb.append("---- Student ----\n");
-        sb.append("ID: ").append(id).append("\n");
-        sb.append("Name: ").append(name).append("\n");
+        sb.append(super.getProfile());
         sb.append("Grade: ").append(grade).append("\n");
-        String email = getEmail();
-        sb.append("Email: ").append(email).append("\n");
+        // String email = getEmail();
+        // sb.append("Email: ").append(email).append("\n");
         return sb.toString();
     }
 }
