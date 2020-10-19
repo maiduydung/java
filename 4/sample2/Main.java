@@ -7,6 +7,14 @@ public class Main {
        System.out.printf("%s",st.getStudentProfile());
        Teacher t = new Teacher("9999", "Dung", "PhD");
        System.out.printf("%s",t.getTeacherProfile());
+
+       printMember(st);
+    }
+
+    private static void printMember(Member m){
+        System.out.printf("%s\n", m.id);
+        System.out.printf("%s\n", m.name);
+        System.out.printf("%s\n", m.getEmail());
     }
 }
 
