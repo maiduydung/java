@@ -14,4 +14,13 @@ public class Member {
     String getEmail(){
         return this.id + DOMAIN;
     }
+
+    String getProfile(){
+        StringBuffer sb = new StringBuffer();
+        sb.append("ID: ").append(id).append("\n");
+        sb.append("Name: ").append(name).append("\n");
+        String email = getEmail();
+        sb.append("Email: ").append(email).append("\n");
+        return sb.toString();
+    }
 }

@@ -7,14 +7,15 @@ public class Teacher extends Member{
         this.title = title;
     }
 
-
-    String getTeacherProfile(){
+    @Override
+    String getProfile(){
+        
         StringBuffer sb = new StringBuffer();
         sb.append("---- Teacher ----\n");
         sb.append("ID: ").append(id).append("\n");
         sb.append("Name: ").append(name).append("\n");
         sb.append("Title: ").append(title).append("\n");
-        String email = super.getEmail();
+        String email = getEmail();
         sb.append("Email: ").append(email).append("\n");
         return sb.toString();
     }

@@ -10,13 +10,14 @@ public class Student extends Member {
        this.grade = grade;
     }
 
-    String getStudentProfile(){
+    @Override
+    String getProfile(){
         StringBuffer sb = new StringBuffer();
         sb.append("---- Student ----\n");
         sb.append("ID: ").append(id).append("\n");
         sb.append("Name: ").append(name).append("\n");
         sb.append("Grade: ").append(grade).append("\n");
-        String email = super.getEmail();
+        String email = getEmail();
         sb.append("Email: ").append(email).append("\n");
         return sb.toString();
     }
