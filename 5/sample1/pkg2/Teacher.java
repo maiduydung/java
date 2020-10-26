@@ -8,6 +8,12 @@ public class Teacher extends Member{
         super(id, name);
         this.title = title;
     }
+
+    @Override
+    public boolean canReserveRoom() {
+        return true;
+    }
+
     @Override
     public String getProfile() {
         StringBuffer sb = new StringBuffer();

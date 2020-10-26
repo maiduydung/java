@@ -9,6 +9,11 @@ public class Student extends Member {
         super(id, name);
         this.grade = grade;
     }
+
+    @Override
+    public boolean canReserveRoom() {
+        return false;
+    }
     
     @Override
     public String getProfile() {
