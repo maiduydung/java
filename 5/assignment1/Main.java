@@ -1,9 +1,13 @@
 package assignment1;
 
 import assignment1.base.Figure;
+import assignment1.base.Writable;
 import assignment1.figures.Pyramid;
 import assignment1.figures.Rectangle;
 import assignment1.figures.Square;
+
+
+import assignment1.figures.WritePyramid;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,5 +22,8 @@ public class Main {
         r.draw();
         System.out.println("---");
         s.draw();
+
+
+        
     }
 }
