@@ -1,15 +1,15 @@
-package sample2;
+package sample1.pkg2;
 import sample1.pkg1.Member;
 
 public class Teacher extends Member{
-    String title;
+    private String title;
 
-    Teacher(String id, String name, String title) {
+    public Teacher(String id, String name, String title) {
         super(id, name);
         this.title = title;
     }
     @Override
-    String getProfile() {
+    public String getProfile() {
         StringBuffer sb = new StringBuffer();
         sb.append("----- Teacher -----\n");
         sb.append(super.getProfile());
@@ -17,7 +17,7 @@ public class Teacher extends Member{
         return sb.toString();
     }
     @Override
-    String getEmail() {
+    protected String getEmail() {
         return name + DOMAIN;
     }
 }
