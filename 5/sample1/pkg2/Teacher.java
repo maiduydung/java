@@ -20,6 +20,8 @@ public class Teacher extends Member{
         sb.append("----- Teacher -----\n");
         sb.append(super.getProfile());
         sb.append("Title:  ").append(title).append("\n");
+        String email = getEmail();
+        sb.append("email:  ").append(email).append("\n");
         return sb.toString();
     }
     @Override

@@ -11,9 +11,7 @@ abstract public class Member {
         this.name = name;
     }
 
-    protected String getEmail() {
-        return this.id + DOMAIN;
-    }
+    abstract protected String getEmail();
 
     abstract public boolean canReserveRoom();
 
@@ -21,8 +19,8 @@ abstract public class Member {
         StringBuffer sb = new StringBuffer();
         sb.append("ID:     ").append(id).append("\n");
         sb.append("Name:   ").append(name).append("\n");
-        String email = getEmail();
-        sb.append("email:  ").append(email).append("\n");
+        //String email = getEmail();
+        //sb.append("email:  ").append(email).append("\n");
         if(canReserveRoom()){
             sb.append("Room: OK").append("\n");
         }else{
