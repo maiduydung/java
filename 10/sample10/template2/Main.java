@@ -7,7 +7,7 @@ public class Main {
         ActivityManager manager = ActivityManager.getInstance();
         manager.addActivity(new EchoActivity());
         manager.addActivity(new QuizActivity());
-
+        manager.addActivity(new PyramidActivity());
         manager.execute();
     }
 }
